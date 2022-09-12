@@ -209,3 +209,28 @@ footer{
     border-radius: 6px;
     border: 1px solid black;
   }
+  th{
+    background-color: #4f604f;
+    color: white;
+}
+tfoot{
+    background-color: antiquewhite;
+    color: black;
+    text-align: center;
+    
+}
+colgroup{ 
+    background-color: #055405;  
+    text-align: center; 
+     color: white; 
+        
+}
+table,td,tr{
+     border: 1px solid black;
+     border-collapse: collapse;
+     padding: 10px 15px;
+     
+}
+table{
+    margin-left: 150px;
+}
