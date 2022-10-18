@@ -1,35 +1,40 @@
 body{
-    background-color: #026873;
-    background-image: linear-gradient(90deg, rgba(255,255,255,.07) 50%, transparent 50%),
-    linear-gradient(90deg, rgba(255,255,255,.13) 50%, transparent 50%),
-    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.17) 50%),
-    linear-gradient(90deg, transparent 50%, rgba(255,255,255,.19) 50%);
-    background-size: 13px, 29px, 37px, 53px;
+    background-color: rgb(245, 241, 192);
 }
  /*titulo principal*/
 h1{
     color: blue;
-    text-align: left;
+    text-align: right;
+    margin-left: 3rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 3em; 
+    font-size: 2rem; 
     letter-spacing: 10px;
     text-shadow: 4px 5px rgb(50, 50, 36);
-    text-decoration: underline rgb(12, 195, 39);
+    margin-right: 8rem;
 }
 .LOGO {
     float: left;
+    height: 5rem;
+    margin-top: -10px;
 }
 
 header{
-     background-color: aquamarine;
-     border: 2px solid #079918;
+     background-color:  rgb(164, 175, 218);
+     border: #7145e9;
+     border-radius: 10px;
+     border-style: double;
+     height: 8rem;
 }
+
+
+ 
 /*los link del nav y del footer*/
 .link{
     float: left;
     margin: 5px;
     list-style: none;
-    
+    margin-top: -25px;
+  
 }
 .link2{
     float: right;
@@ -38,7 +43,7 @@ header{
 }
 /*botones del nav*/
 li a{
-    display: block;
+    display: inline-block; 
     color: white;
     text-align: center;
     padding: 5px;
@@ -46,6 +51,8 @@ li a{
     background-color: #0016b0 ;
     border-radius: 6px;
     border: 2px solid #4d045a;
+    float: none; 
+    list-style: none;    
 }
 
 /*seccion home*/
@@ -56,54 +63,155 @@ article > h2{
     margin: 20px;
    
 }
-
+@font-face {
+    font-family: Giliams;
+    src: url(fuentes/giliams/Giliams-Regular.ttf);
+}
 h2{
-    font-size: 200%;
+    font-size: 150%;
     text-align: center;
-    font-family: 'Dancing Script';
-    color:white; 
+    font-family: Giliams;
+    color:black;
+    list-style: none;
+
 }
 
     
 .imgArticle{  /*imagenes del index*/
     width: 99%;
-    border: 3px;
+    border: 10px;
     padding: 0px;
     height: auto;
     image-orientation: center;
     border-style: ridge;
+    border-radius: 6px;
+    border: #7145e9;
 } 
 .link-2 a{
     text-decoration: none;
+    margin-top: -20px;
 }
 /*sección article del home*/
 article{
-    background-color: #1755dc;
+    background-color: rgb(164, 175, 218);
     display: grid;
-    border: solid white;
+    border: solid blue;
     margin: 20px;
    justify-content: center;
    width: 500px;
+   border-radius: 6px;
 }
+
+
 .dosColumnas{
     display: flex;
+    margin-top: 25px;
+   
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Seccion politica*/
+.container2{
+    width: 90%;
+    border: 10px;
+    padding: 1px;
+    height: 30%;
+    image-orientation: center;
+    border-style: ridge;
+    border-radius: 6px;
+  
+
+}
+.formulario{
+    background-color: #f5e531;
+    width:350px;
+    height: 200px;
+    margin: 20px;
+    margin-top: 5px;
+    font-size: 19px;
+    font-family: monospace;
+    text-align: center;
+}
+#uno,#dos{
+    width: 80px;
+    height: 15px;
+}
+#valor{
+    font-size: 20px;   
+}
+#cotizador{
+    font-size: 20px;
+    border-radius: 12px;
+    background-color: #0016b0;
+    color: white;
 }
 
 /* secciondeporte*/
 
-.form-campeon {
-    background-color:rgb(145, 225, 198);
+
+.imagDeporte{
+    max-width: fit-content;
+    max-height: fit-content;
+    float: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.textoDeporte{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 50px;
+    width: 90%;
+    margin-bottom: 5px;
+}
+.deportes{
+    background-color:rgb(90, 110, 190);
     width: 900px;  
     margin-top: 03px;
+    margin-left: 40px;
+    display: block;
+    text-decoration: none;
+    border-radius: 6px;
+    border: 1px solid rgb(36, 5, 160);
+}
+.form-campeon {
+    background-color:rgb(164, 175, 218);
+    width: 900px;  
+    margin-top: 10px;
     margin-left: 40px; 
     display: block;
+    border-radius: 10px;
+    text-decoration: none;
 }
-h3,p{
+h3{
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white; 
+    list-style: none;
+}
+p{
     margin: 5px 20px 5px 20px ;
     color:rgb(16, 15, 15);
 }
 
 /*tabla*/
+.pintar1{
+    background-color: rgb(8, 181, 8);  
+    width: max-content;
+    text-align: center;
+}
+
+.pintar2{
+    background-color: #f5e531;
+    width: max-content;
+}
+.pintar3{
+    background-color: #4f604f;
+    width: max-content;
+}
 th{
     background-color: #4f604f;
     color: white;
@@ -120,20 +228,23 @@ tfoot{
 table,td,tr{
      border: 1px solid black;
      border-collapse: collapse;
-     padding: 10px 15px;
+     padding: 8px 10px;font-family: Arial, Helvetica, sans-serif;
      
 }
 table{
     margin-left: 50px;
-    margin-top: 1em;
+    margin-top: 5px;
+    margin-bottom: 30px;
 }
 aside{
     display: inline-block;
-    width: 320px;
+    width: 350px;
     background:rgb(90, 110, 190);
-    text-align: center;
-    margin: 1.5rem;
+    text-align: justify;
+    margin: 1rem;
    height: 550px;
+   margin-top: 2rem;
+   border-radius: 10px;
 }
 /*seccion registro*/
 .form-register {
@@ -143,9 +254,12 @@ aside{
     display: block;
     height: 450px;
     text-align:center;
+    margin-bottom: 20px;
     
 }
-  
+.derecha{
+     text-align: left;
+} 
 .sectionform-register {
     background-color: rgb(90, 110, 190);
     padding: 10px;
@@ -172,46 +286,52 @@ aside{
   }
 /*seccionsucursales*/
 .map{
-   
-    display: inline-block;   
+    background-color: #969896;
+    display: inline-block; 
+    height: 300px; 
+    margin-top: 5px; 
 }
 
 .map > iframe{
    margin: 0.1rem;
    width: 220px;
     margin-top: 03px;
+    
 }
 
 .sucursales{
     background-color:rgb(90, 110, 190);
-    width: 300px;
+    width: 900px;
     margin-top: 03px;
     display: inline;
     display: block;
-   
+    border-radius: 10px;
+    display: flex;
+    margin-top: 25px;
 }
 .visita{
     display: center;
     margin-left: 300px;  
 }
 /*seccionespectaculo*/
- 
-h7{
-    font-size: 1.72em;
-    text-align: center;
-    text-decoration: underline;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white; 
-}
-.espectaculos{
-    background-color:rgb(90, 110, 190);
-    width: 900px;  
-    margin-top: 03px;
-    margin-left: 10px;
-    display: block;
-    text-decoration: none;
+ .Imgesp{
+    width: 99%;
+    border: 10px;
+    padding: 0px;
+    height: auto;
+    image-orientation: center;
+    border-style: ridge;
     border-radius: 6px;
-    border: 1px solid rgb(36, 5, 160);
+    border: #7145e9;
+ }
+.container{
+    background-color: rgb(164, 175, 218);
+    display: grid;     
+   justify-content: center;
+   width: 280px;
+   border-radius: 6px;
+   
+   
 }
 
 
@@ -219,18 +339,19 @@ h7{
     display: center;
     margin-left: 50px;  
 }
-h8{
-    font-size: 1.3em;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:black; 
-
+.tres-columnas{    
+    display: flex;
+    margin-top: 25px;
+   
 }
+
 /*seccionf footer*/
 
 footer{
-    background: aquamarine;
-    border: 2px solid #079918;
+    background: rgb(164, 175, 218);
+    border: #7145e9;
+    border-radius: 10px;
+    border-style: double;
 }
 
 .fa-facebook {
